@@ -20,7 +20,7 @@ BREW_PREFIX=$(brew --prefix)
 # Install GNU core utilities (those that come with macOS are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
-ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
+ln -nsf "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
 
 # Install some other useful utilities like `sponge`.
 brew install moreutils
@@ -29,26 +29,26 @@ brew install moreutils
 brew install findutils
 
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
+brew install gnu-sed -- --with-default-names
 
 # Install a modern version of Bash.
 brew install bash
 brew install bash-completion2
 
-Switch to using brew-installed bash as default shell
+# Switch to using brew-installed bash as default shell
 if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
  echo "${BREW_PREFIX}/bin/bash" | sudo tee -a /etc/shells;
  chsh -s "${BREW_PREFIX}/bin/bash";
 fi;
 
 # Install `wget` with IRI support.
-brew install wget --with-iri
+brew install wget -- --with-iri
 
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
 
 # Install more recent versions of some macOS tools.
-brew install vim --with-override-system-vi
+brew install vim -- --with-override-system-vi
 brew install grep
 brew install openssh
 brew install screen
@@ -92,16 +92,16 @@ brew install woff2
 # brew install exiv2
 brew install git
 # brew install git-lfs
-# brew install gs
-# brew install imagemagick --with-webp
+brew install gs
+brew install imagemagick -- --with-webp
 # brew install lua
 # brew install lynx
 # brew install p7zip
 # brew install pigz
 # brew install pv
-# brew install rename
+brew install rename
 # brew install rlwrap
-# brew install ssh-copy-id
+brew install ssh-copy-id
 brew install tree
 # brew install vbindiff
 # brew install zopfli
@@ -111,14 +111,14 @@ brew tap homebrew/bundle
 brew bundle
 
 # Install PHP extensions with PECL
-# pecl install memcached imagick
+pecl install imagick
 
 # Install global Composer packages
 # /usr/local/bin/composer global require laravel/installer
 
 # Create a Sites directory
 # This is a default directory for macOS user accounts but doesn't comes pre-installed
-mkdir $HOME/projects
+mkdir -p $HOME/projects
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
 # rm -rf $HOME/.zshrc
