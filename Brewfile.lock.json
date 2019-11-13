@@ -2,7 +2,7 @@
   "entries": {
     "tap": {
       "homebrew/cask": {
-        "revision": "bd2cb2378240a31e6c19165ddfa8c25042de5d49"
+        "revision": "180502eff3f2b1728945c39660c255a3b84746ab"
       },
       "homebrew/cask-eid": {
         "revision": "248e26a85a5e903fd134954ec82138cfe35eb5ce"
@@ -970,7 +970,7 @@
       "catalina": {
         "HOMEBREW_VERSION": "2.1.16",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "38ba97c64f16e1633c898d2cf01c15e02d272634",
+        "Homebrew/homebrew-core": "d7cc7eb8e5c1f8da9e0b11f83001aa0bb5446e29",
         "CLT": "11.0.0.0.1.1567737322",
         "Xcode": "11.0",
         "macOS": "10.15.1"
