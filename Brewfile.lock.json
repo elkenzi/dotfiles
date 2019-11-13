@@ -2,7 +2,7 @@
   "entries": {
     "tap": {
       "homebrew/cask": {
-        "revision": "180502eff3f2b1728945c39660c255a3b84746ab"
+        "revision": "2e9c1098bfcd9a8c0f46428bdd3f7110c1424898"
       },
       "homebrew/cask-eid": {
         "revision": "248e26a85a5e903fd134954ec82138cfe35eb5ce"
@@ -852,6 +852,56 @@
             }
           }
         }
+      },
+      "openldap": {
+        "version": "2.4.48_1",
+        "bottle": {
+          "cellar": "/usr/local/Cellar",
+          "prefix": "/usr/local",
+          "files": {
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/openldap-2.4.48_1.catalina.bottle.tar.gz",
+              "sha256": "644e0ba997bdc81cddd8906cb7eee96bd44ed7e6ad4a586db6313f13e251b0e2"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/openldap-2.4.48_1.mojave.bottle.tar.gz",
+              "sha256": "9094f2a881c3ceebec82e0be185a684ffbed08b05ddca3d6a87c7b730021b351"
+            },
+            "high_sierra": {
+              "url": "https://homebrew.bintray.com/bottles/openldap-2.4.48_1.high_sierra.bottle.tar.gz",
+              "sha256": "910f65142bf5df01cc618a8896b51b1cd925e162078afc599256232e2804eb71"
+            },
+            "sierra": {
+              "url": "https://homebrew.bintray.com/bottles/openldap-2.4.48_1.sierra.bottle.tar.gz",
+              "sha256": "2f8144b9e6930366b005469d4cc33f57d80048d402a60b3c1f3bf4783139ddd0"
+            }
+          }
+        }
+      },
+      "libiconv": {
+        "version": "1.16",
+        "bottle": {
+          "cellar": ":any",
+          "prefix": "/usr/local",
+          "files": {
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/libiconv-1.16.catalina.bottle.tar.gz",
+              "sha256": "24d81638fcd7416a56c3dbdac7e2265d7b0476b17a71b631045425380122e6b1"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/libiconv-1.16.mojave.bottle.tar.gz",
+              "sha256": "7638dd8e2d511a2ce14c6c420762ce7fdbae6a34158e25015c3ffd88de2dd19b"
+            },
+            "high_sierra": {
+              "url": "https://homebrew.bintray.com/bottles/libiconv-1.16.high_sierra.bottle.tar.gz",
+              "sha256": "0f7f5728be3b7fc082a62df5e38cf1f1f9dc540e95f0c3479788cc2e2dee7294"
+            },
+            "sierra": {
+              "url": "https://homebrew.bintray.com/bottles/libiconv-1.16.sierra.bottle.tar.gz",
+              "sha256": "2c40a7b0486b9394f5f4cb6304179527421b68c965c49d961cf2703205da93e1"
+            }
+          }
+        }
       }
     },
     "cask": {
@@ -962,6 +1012,21 @@
       },
       "whatsapp": {
         "version": "0.3.5374"
+      },
+      "sequel-pro": {
+        "version": "1.1.2"
+      },
+      "iterm2": {
+        "version": "3.3.6"
+      },
+      "firefox-developer-edition": {
+        "version": "latest"
+      },
+      "postman": {
+        "version": "7.11.0"
+      },
+      "spectacle": {
+        "version": "1.2"
       }
     }
   },
@@ -970,7 +1035,7 @@
       "catalina": {
         "HOMEBREW_VERSION": "2.1.16",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "d7cc7eb8e5c1f8da9e0b11f83001aa0bb5446e29",
+        "Homebrew/homebrew-core": "982f0b56fa81f57591cef54011b80389114eaa4c",
         "CLT": "11.0.0.0.1.1567737322",
         "Xcode": "11.0",
         "macOS": "10.15.1"
