@@ -4,13 +4,21 @@ tap 'homebrew/cask-eid'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
+tap 'bramstein/webfonttools'
 
 # Binaries
+brew 'coreutils'
+brew 'moreutils' # Install some other useful utilities like `sponge`.
+brew 'findutils' # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
+brew 'gnu-sed', args: ["with-default-names"] # Install GNU `sed`, overwriting the built-in `sed`.
+brew 'wget', args: ["with-iri"]
 brew 'awscli'
 brew 'bash' # Latest Bash version
+brew 'bash-completion2'
 brew 'bat' # "cat" on steroids
 brew 'coreutils' # Those that come with macOS are outdated
 brew 'git'
+brew 'gnupg'
 brew 'gnupg2'
 brew 'grep'
 brew 'httpie'
@@ -27,6 +35,20 @@ brew 'htop'
 brew 'ncdu'
 brew 'tldr'
 brew 'jenv'
+brew 'vim', args: ["with-override-system-vi"]
+brew 'openssh'
+brew 'screen'
+brew 'gmp'
+brew 'gs'
+brew 'imagemagick', args: ["with-webp"]
+brew 'rename'
+brew 'tree'
+brew 'ssh-copy-id'
+
+# Fonts
+brew 'sfnt2woff'
+brew 'sfnt2woff-zopfli'
+brew 'woff2'
 
 # Development
 # brew 'php'
@@ -61,6 +83,7 @@ cask 'sublime-text'
 cask 'tableplus'
 cask 'transmission'
 cask 'vlc'
+cask 'whatsapp'
 
 # Quicklook
 cask 'qlcolorcode'
