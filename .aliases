@@ -261,18 +261,12 @@ export EDITOR=nano
 export SYMFONY_ENV=local
 export SYMFONY_DEBUG=true
 export GPG_TTY=$(tty)
-export PATH="$PATH:$HOME/.composer/vendor/bin"
+
 export ZSH_THEME="nicoulaj"
 export LC_ALL='en_US.UTF-8'
 export LANG='en_US.UTF-8'
 
-export TTP_DATABASE_PORT=33060
-
 export JAVA_HOME=`/usr/libexec/java_home -v 13`
-export PATH="$HOME/.symfony/bin:$PATH"
-export PATH=/usr/local/bin:$PATH
-
-export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
 # eval $(ssh-agent -s)
@@ -313,22 +307,6 @@ function clone() {
     ( hub clone $1 $1 )
 }
 
-function unit() {
-  clear
-
-  currentDirectory=$(pwd)
-
-  cd "/Users/yoeunes/projects/tamtam/apittp"
-
-  ./vendor/bin/phpunit "$currentDirectory/$1"
-
-  cd "$currentDirectory"
-}
-
-function apidiff() {
-   ( git diff --color-words --no-index /Users/yoeunes/projects/tamtam/apittp/$1 /Users/yoeunes/projects/bruno-apittp/$1 )
-}
-
 function datesync() {
     sudo service ntp stop && sudo ntpd -gq && sudo service ntp start
 }
@@ -361,8 +339,4 @@ function signmycommits() {
   then git commit-tree -S "$@";
   else git commit-tree "$@";
   fi' HEAD
-}
-
-composer-link() {
-    composer config repositories.local '{"type": "path", "url": "'$1'"}' --file composer.json
 }

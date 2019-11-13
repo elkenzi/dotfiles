@@ -44,6 +44,8 @@ brew 'imagemagick', args: ["with-webp"]
 brew 'rename'
 brew 'tree'
 brew 'ssh-copy-id'
+brew 'openldap'
+brew 'libiconv'
 
 # Fonts
 brew 'sfnt2woff'

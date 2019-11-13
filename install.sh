@@ -8,6 +8,11 @@ if test ! $(which brew); then
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
+if test ! $(which sphp); then
+  curl -L https://gist.githubusercontent.com/rhukster/f4c04f1bf59e0b74e335ee5d186a98e2/raw > /usr/local/bin/sphp
+  chmod +x /usr/local/bin/sphp
+fi
+
 # Make sure we’re using the latest Homebrew.
 brew update
 
