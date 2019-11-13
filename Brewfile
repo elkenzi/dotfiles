@@ -21,24 +21,26 @@ brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
 brew 'trash' # Manage the Trash bin
 brew 'tree' # List directories in a tree structure
 brew 'zlib' # Needed for Memcached
+brew 'fzf'
+brew 'bat'
+brew 'htop'
+brew 'ncdu'
+brew 'tldr'
+brew 'jenv'
 
 # Development
-brew 'php'
+# brew 'php'
 brew 'php@7.2'
 brew 'composer'
 # brew 'mysql'
 # brew 'nginx'
-# brew 'node'
+brew 'node'
 # brew 'redis'
 brew 'yarn'
 
 # Apps
-# cask 'aerial'
-# cask 'alfred'
-# cask 'bartender'
-# cask 'caffeine'
-# cask 'discord'
-# cask 'docker'
+cask 'alfred'
+cask 'docker'
 cask 'firefox'
 cask 'github'
 cask 'google-backup-and-sync'
@@ -46,20 +48,18 @@ cask 'google-chrome'
 cask 'gpg-suite'
 cask 'insomnia'
 cask 'java'
-# cask 'mysqlworkbench'
-# cask 'notion'
-# cask 'phpstorm'
 cask 'skype'
-# cask 'slack'
-# cask 'sublime-text'
-# cask 'tableplus'
-# cask 'telegram-desktop'
-# cask 'tor-browser'
+cask 'jetbrains-toolbox'
+cask 'gitkraken'
+cask 'atom'
+cask 'adguard'
+cask 'dropbox'
+cask 'coderunner'
+cask 'flexiglass'
+cask 'macupdater'
+cask 'sublime-text'
+cask 'tableplus'
 cask 'transmission'
-# cask 'transmit'
-# cask 'vagrant'
-# cask 'virtualbox' # Might need to allow access in Security settings
-# cask 'virtualbox-extension-pack'
 cask 'vlc'
 
 # Quicklook
@@ -80,13 +80,5 @@ cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
 
 # Mac App Store
-# mas '1Password', id: 1333542190
-# mas 'Byword', id: 420212497
-# mas 'Giphy Capture', id: 668208984
-# mas 'Keynote', id: 409183694
-# mas 'Sip', id: 507257563
-# mas 'Spark', id: 1176895641
-# mas 'The Unarchiver', id: 425424353
-# mas 'Things', id: 904280696
-# mas 'Tweetbot', id: 1384080005
 # mas 'WhatsApp', id: 1147396723
+# mas 'FileZilla', id: 1298486723

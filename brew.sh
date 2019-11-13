@@ -52,7 +52,7 @@ brew install vim -- --with-override-system-vi
 brew install grep
 brew install openssh
 brew install screen
-brew install php
+# brew install php
 brew install gmp
 
 # Install font tools.
@@ -111,7 +111,7 @@ brew tap homebrew/bundle
 brew bundle
 
 # Install PHP extensions with PECL
-pecl install imagick
+# pecl install imagick
 
 # Install global Composer packages
 # /usr/local/bin/composer global require laravel/installer

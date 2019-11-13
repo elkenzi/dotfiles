@@ -151,36 +151,36 @@ alias path='echo -e ${PATH//:/\\n}'
 alias artisan="php artisan"
 alias getweb="wget --recursive --no-clobber --page-requisites --html-extension --convert-links --no-parent"
 
-alias code="cd ~/code/"
-alias home="cd ~/code/tamtam/home"
-alias apittp="cd ~/code/tamtam/apittp"
-alias rentimo="cd ~/code/tamtam/rentimo"
-alias boyacars="cd ~/code/tamtam/boyacars"
+alias projects="cd ~/projects/"
+alias home="cd ~/projects/tamtam/home"
+alias apittp="cd ~/projects/tamtam/apittp"
+alias rentimo="cd ~/projects/tamtam/rentimo"
+alias boyacars="cd ~/projects/tamtam/boyacars"
 
 alias cuat='git checkout origin/uat'
 alias cdiff='git diff media2rc..origin/uat --'
 
-alias api="cd ~/code/tamtam/apittp/src/TTP/ApiBundle"
-alias blog="cd ~/code/tamtam/apittp/src/TTP/BlogBundle"
-alias event="cd ~/code/tamtam/apittp/src/TTP/EventBundle"
-alias mailer="cd ~/code/tamtam/apittp/src/TTP/MailerBundle"
-alias mailing="cd ~/code/tamtam/apittp/src/TTP/MailingBundle"
-alias payment="cd ~/code/tamtam/apittp/src/TTP/PaymentBundle"
-alias rbac="cd ~/code/tamtam/apittp/src/TTP/RbacBundle"
-alias survey="cd ~/code/tamtam/apittp/src/TTP/SurveyBundle"
-alias talk="cd ~/code/tamtam/apittp/src/TTP/TalkBundle"
-alias wtb="cd ~/code/tamtam/apittp/src/TTP/WtbBundle"
-alias media="cd ~/code/tamtam/apittp/src/TTP/MediaBundle"
-alias billing="cd ~/code/tamtam/apittp/src/TTP/BillingBundle"
-alias membership="cd ~/code/tamtam/apittp/src/TTP/MembershipBundle"
-alias data="cd ~/code/tamtam/apittp/src/TTP/DataBundle"
+alias api="cd ~/projects/tamtam/apittp/src/TTP/ApiBundle"
+alias blog="cd ~/projects/tamtam/apittp/src/TTP/BlogBundle"
+alias event="cd ~/projects/tamtam/apittp/src/TTP/EventBundle"
+alias mailer="cd ~/projects/tamtam/apittp/src/TTP/MailerBundle"
+alias mailing="cd ~/projects/tamtam/apittp/src/TTP/MailingBundle"
+alias payment="cd ~/projects/tamtam/apittp/src/TTP/PaymentBundle"
+alias rbac="cd ~/projects/tamtam/apittp/src/TTP/RbacBundle"
+alias survey="cd ~/projects/tamtam/apittp/src/TTP/SurveyBundle"
+alias talk="cd ~/projects/tamtam/apittp/src/TTP/TalkBundle"
+alias wtb="cd ~/projects/tamtam/apittp/src/TTP/WtbBundle"
+alias media="cd ~/projects/tamtam/apittp/src/TTP/MediaBundle"
+alias billing="cd ~/projects/tamtam/apittp/src/TTP/BillingBundle"
+alias membership="cd ~/projects/tamtam/apittp/src/TTP/MembershipBundle"
+alias data="cd ~/projects/tamtam/apittp/src/TTP/DataBundle"
 
 alias update="composer global update; npm update -g;"
 alias hist="clear && history | sed 's/.[ ]*.[0-9]*.[ ]*//' | sort -u | uniq"
 alias histg="clear && history | sed 's/.[ ]*.[0-9]*.[ ]*//' | sort -u | uniq | grep -i"
 
-alias aliases='atom -a ~/.bash_aliases'
-alias save_aliases='source ~/.bash_aliases && source ~/.zshrc'
+alias aliases='atom -a ~/.aliases'
+alias save_aliases='source ~/.aliases'
 alias save_zshrc='source ~/.zshrc'
 
 alias gitatom='git config --global rerere.enabled 1; git config --add rebase.instructionFormat "(%an <%ae>) %s"; git config --global core.editor "atom --wait"'
@@ -215,7 +215,7 @@ alias scopy="rsync -avz -P -e 'ssh'"
 alias mampmysql="/Applications/MAMP/Library/bin/mysql -u root -proot"
 
 alias wip="git add .;git commit -am 'wip'"
-alias clearapilogs='sudo rm -rf /Users/yoeunes/code/tamtam/apittp/var/logs/*'
+alias clearapilogs='sudo rm -rf /Users/yoeunes/projects/tamtam/apittp/var/logs/*'
 alias clearhomelogs=': > storage/logs/laravel.log'
 
 alias preview="fzf --preview 'bat --color \"always\" {}'"
@@ -224,9 +224,9 @@ alias top="sudo htop"
 alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules,vendor"
 alias help='tldr'
 
-alias storageprod='rsync -r --info=progress2 --stats --ignore-existing -a -h -e "ssh -i ~/.ssh/prod-server.pem"  ec2-user@api2.tamtam.pro:/home/ec2-user/plateforme/api/storage ~/code/tamtam/apittp/web'
-alias storageuat='rsync -r --info=progress2 --stats --ignore-existing -a -h -e "ssh -i ~/.ssh/uat-server.pem"  ec2-user@uat2.api.tamtam.pro:/home/ec2-user/plateforme/api/storage ~/code/tamtam/apittp/web'
-alias storagedev='rsync -r --info=progress2 --stats --ignore-existing -a -h -e "ssh -i ~/.ssh/dev-server.pem"  ec2-user@dev2.api.tamtam.pro:/home/ec2-user/plateforme/api/storage ~/code/tamtam/apittp/web'
+alias storageprod='rsync -r --info=progress2 --stats --ignore-existing -a -h -e "ssh -i ~/.ssh/prod-server.pem"  ec2-user@api2.tamtam.pro:/home/ec2-user/plateforme/api/storage ~/projects/tamtam/apittp/web'
+alias storageuat='rsync -r --info=progress2 --stats --ignore-existing -a -h -e "ssh -i ~/.ssh/uat-server.pem"  ec2-user@uat2.api.tamtam.pro:/home/ec2-user/plateforme/api/storage ~/projects/tamtam/apittp/web'
+alias storagedev='rsync -r --info=progress2 --stats --ignore-existing -a -h -e "ssh -i ~/.ssh/dev-server.pem"  ec2-user@dev2.api.tamtam.pro:/home/ec2-user/plateforme/api/storage ~/projects/tamtam/apittp/web'
 
 alias ciprod='git commit --allow-empty -m "[ci:base=splitup-prod] and [ci:env=prod]"'
 alias ciuat='git commit --allow-empty -m "[ci:base=splitup-uat] and [ci:env=uat]"'
@@ -253,7 +253,7 @@ alias splitupuat='apittp && subinit && git checkout splitup-uat && subinit && su
 alias splitupprod='apittp && subinit && git checkout splitup-prod && subinit && subcheckout prod'
 alias splituprc='apittp && subinit && git checkout rc && subinit && subcheckout rc'
 
-alias domains="cd /Users/yoeunes/code/yoeunes/domainnames && printf '\33c\e[3J' && ./domains && cd -"
+alias domains="cd /Users/yoeunes/projects/yoeunes/domainnames && printf '\33c\e[3J' && ./domains && cd -"
 alias clears="printf '\33c\e[3J'"
 
 export SSH_KEY_PATH="~/.ssh/rsa_id"
@@ -268,15 +268,14 @@ export LANG='en_US.UTF-8'
 
 export TTP_DATABASE_PORT=33060
 
-#export JENV_ROOT="/usr/local/Cellar/jenv/"
-export JAVA_HOME=`/usr/libexec/java_home -v 11`
+export JAVA_HOME=`/usr/libexec/java_home -v 13`
 export PATH="$HOME/.symfony/bin:$PATH"
 export PATH=/usr/local/bin:$PATH
 
-#if which jenv > /dev/null; then eval "$(jenv init -)"; fi
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
 
 # eval $(ssh-agent -s)
-#eval $(dinghy env)
 
 # ssh-add -K ~/.ssh/id_rsa
 # ssh-add -K ~/.ssh/github-elkenzi
@@ -307,7 +306,7 @@ function homestead() {
 }
 
 function laradock() {
-    ( cd ~/code/tamtam/laradock && docker-compose $* )
+    ( cd ~/projects/tamtam/laradock && docker-compose $* )
 }
 
 function clone() {
@@ -319,7 +318,7 @@ function unit() {
 
   currentDirectory=$(pwd)
 
-  cd "/Users/yoeunes/code/tamtam/apittp"
+  cd "/Users/yoeunes/projects/tamtam/apittp"
 
   ./vendor/bin/phpunit "$currentDirectory/$1"
 
@@ -327,7 +326,7 @@ function unit() {
 }
 
 function apidiff() {
-   ( git diff --color-words --no-index /Users/yoeunes/code/tamtam/apittp/$1 /Users/yoeunes/code/bruno-apittp/$1 )
+   ( git diff --color-words --no-index /Users/yoeunes/projects/tamtam/apittp/$1 /Users/yoeunes/projects/bruno-apittp/$1 )
 }
 
 function datesync() {
